@@ -1,6 +1,6 @@
 {
   "name": "bare-auth-linkedin",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Stateless authentication with LinkedIn using Bare Auth",
   "keywords": [
     "authentication",
