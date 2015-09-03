@@ -20,7 +20,7 @@ Go to: https://www.linkedin.com/developer/apps to get started
 - Go to: https://www.linkedin.com/developer/apps/{{APP_ID}}/auth
 - Add a redirect URL with the following format: `{{ORIGIN}}/auth/`. Example: `http://localhost:7000/auth/` or `https://app.finbox.io/auth/`
 
-> **Important:** Don't forget to add the trailing slash as part of the valid redirect URI. Facebook will fail silently and you won't know why.
+> **Important:** Don't forget to add the trailing slash as part of the valid redirect URI.
 
 ##### 3. Setup the client-side
 
