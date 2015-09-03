@@ -3,9 +3,26 @@
 
   LinkedIn authentication with [Bare Auth](https://github.com/lapwinglabs/bare-auth).
 
-## Usage
+## Installation
 
-**client.js:**
+```
+npm install bare-auth-linkedin
+```
+
+## Setup
+
+##### 1. Create an App
+
+Go to: https://www.linkedin.com/developer/apps to get started
+
+##### 2. Add a valid Redirect URI
+
+- Go to: https://www.linkedin.com/developer/apps/{{APP_ID}}/auth
+- Add a redirect URL with the following format: `{{ORIGIN}}/auth/`. Example: `http://localhost:7000/auth/` or `https://app.finbox.io/auth/`
+
+> **Important:** Don't forget to add the trailing slash as part of the valid redirect URI. Facebook will fail silently and you won't know why.
+
+##### 3. Setup the client-side
 
 ```js
 var LinkedIn = require('linkedin-bare-auth');
@@ -21,7 +38,7 @@ linkedin(function(err, profile) {
 });
 ```
 
-**server.js (using express):**
+##### 4. Setup the server-side (example using express)
 
 ```js
 var LinkedIn = require('linkedin-bare-auth');
