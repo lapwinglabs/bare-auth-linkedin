@@ -1,4 +1,9 @@
 
+1.0.3 / 2015-09-03
+==================
+
+  * use static /auth/ so can change the paths without breaking the auth
+
 1.0.2 / 2015-08-17
 ==================
 
